@@ -61,6 +61,10 @@ public class Automaton
         //state = nextState;
     }
     
+    public int calculateNextState (int left, int center, int right){
+        return (left + center + right) % 2;
+    }
+    
     /**
      * Reset the automaton.
      */
